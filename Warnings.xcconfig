@@ -1,5 +1,5 @@
 // Linking
-WARNING_CFLAGS = $(inherited) -Weverything -Werror
+WARNING_CFLAGS = $(inherited) -Weverything -Werror -Wno-missing-variable-declarations
 
 // Warnings
 
