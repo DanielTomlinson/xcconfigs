@@ -1,4 +1,4 @@
-#include "UniversalFramework_Base.xcconfig"
+#include "Shared Framework_Base.xcconfig"
 
 FRAMEWORK_SEARCH_PATHS = $(inherited) '$(PLATFORM_DIR)/Developer/Library/Frameworks'
 
