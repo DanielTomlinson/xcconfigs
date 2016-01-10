@@ -12,3 +12,7 @@ TARGETED_DEVICE_FAMILY[sdk=iphone*]           = 1,2
 // Watch-specific default settings
 TARGETED_DEVICE_FAMILY[sdk=watchsimulator*]   = 4
 TARGETED_DEVICE_FAMILY[sdk=watch*]            = 4
+
+// TV-specific default settings
+TARGETED_DEVICE_FAMILY[sdk=tvsimulator*]   = 9
+TARGETED_DEVICE_FAMILY[sdk=tv*]            = 9

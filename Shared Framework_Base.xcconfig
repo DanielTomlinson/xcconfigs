@@ -1,10 +1,12 @@
 // Make it universal
-SUPPORTED_PLATFORMS                    = macosx iphonesimulator iphoneos watchos watchsimulator
+SUPPORTED_PLATFORMS                    = macosx iphonesimulator iphoneos watchos watchsimulator tvos tvsimulator
 VALID_ARCHS[sdk=macosx*]               = i386 x86_64
 VALID_ARCHS[sdk=iphoneos*]             = arm64 armv7 armv7s
 VALID_ARCHS[sdk=iphonesimulator*]      = arm64 armv7 armv7s
 VALID_ARCHS[sdk=watchos*]              = armv7k
 VALID_ARCHS[sdk=watchsimulator*]       = armv7k
+VALID_ARCHS[sdk=tvos*]                 = arm64
+VALID_ARCHS[sdk=tvsimulator*]          = arm64
 
 // Dynamic linking uses different default copy paths
 LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]          = $(inherited) '@executable_path/../Frameworks' '@loader_path/Frameworks'
@@ -12,3 +14,5 @@ LD_RUNPATH_SEARCH_PATHS[sdk=iphoneos*]        = $(inherited) '@executable_path/F
 LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*] = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 LD_RUNPATH_SEARCH_PATHS[sdk=watchos*]         = $(inherited) '@executable_path/Frameworks'
 LD_RUNPATH_SEARCH_PATHS[sdk=watchsimulator*]  = $(inherited) '@executable_path/Frameworks'
+LD_RUNPATH_SEARCH_PATHS[sdk=tvos*]        = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LD_RUNPATH_SEARCH_PATHS[sdk=tvsimulator*] = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
